@@ -2,32 +2,53 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<section id="inicio" class="text-white py-20 px-20">
-    <p class="font-mono text-sm tracking-[3px] uppercase text-gray-400 pt-5 pb-8">
+<section id="inicio" class="text-white py-20 px-20 min-h-screen">
+    <p id="disponible"class="font-mono text-sm tracking-[3px] uppercase text-gray-400 pt-5 pb-8">
         <span class="inline-block w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse shadow-[0_0_6px_2px_rgba(74,222,128,0.7)]"></span>
         Disponible para proyectos
     </p>
-    <p class="font-mono text-lg text-[#7c6fff] uppercase tracking-[3px]">
+    <p id="rol" class="font-mono text-lg text-[#7c6fff] uppercase tracking-[3px]">
         Desarrollador backend
     </p>
-    <h1 class="font-bold uppercase text-9xl select-none pb-13">
-        Sebastian
+    <h1 id="titulo" class="font-bold uppercase text-9xl select-none pb-13">
     </h1>
-    <p class="font-mono text-xl text-gray-400 pb-10">
-        // Soluciones rapidas y backend solido para tu aplicacion._
+    <p id="descripcion" class="font-mono text-xl text-gray-400 pb-10">
     </p>
-    <a href="#proyectos" class="group relative overflow-hidden border border-[#7c6fff] px-6 py-3 font-mono text-xs tracking-widest text-white inline-block">
-        <span class="absolute inset-0 w-0 bg-[#7c6fff] transition-all duration-300 group-hover:w-full"></span>
-        <span class="relative z-10 group-hover:text-white transition-colors duration-300 font-bold">[VER PROYECTOS →]</span>
-    </a>
-    <div class="flex gap-4 mt-8">
-        <a href="https://github.com/tuusuario" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+    <div id="botones" class="flex items-center">
+        <a href="#proyectos" class="group relative overflow-hidden border border-[#7c6fff] px-6 py-3 font-mono text-xs tracking-widest text-white inline-block">
+            <span class="absolute inset-0 w-0 bg-[#7c6fff] transition-all duration-300 group-hover:w-full"></span>
+            <span class="relative z-10 group-hover:text-white transition-colors duration-300 font-bold">[VER PROYECTOS →]</span>
+        </a>
+        <a href="" class="pl-3 font-mono text-[#7c6fff]" >[CONTACTAME]</a>
+    </div>
+
+    <div id="redes" class="flex gap-4 mt-8">
+        <a href="https://github.com/SebasJRHub" target="_blank" class="text-gray-500 hover:text-white transition-colors">
             <Icon name="simple-icons:github" size={20} />
         </a>
 
-        <a href="https://linkedin.com/in/tuusuario" target="_blank" class="text-gray-500 hover:text-white transition-colors">
+        <a href="https://www.linkedin.com/in/sebastian-santacruz-8a8a212a9/" target="_blank" class="text-gray-500 hover:text-white transition-colors">
             <Icon name="simple-icons:linkedin" size={20} />
         </a>
     </div>
-
+    <p id="scroll" class="text-center  tracking-[3px] text-gray-400 font-mono pt-26 text-xs">
+        scroll
+    </p>
 </section>
+
+<script>
+  import gsap from 'gsap';
+  import { TextPlugin } from 'gsap/TextPlugin';
+
+  gsap.registerPlugin(TextPlugin);
+
+  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+
+  tl.from('#disponible', { opacity: 0, y: 20, duration: 0.6 })
+    .from('#rol', { opacity: 0, y: 20, duration: 0.6 }, '-=0.3')
+    .to('#titulo', { duration: 1, text: 'SEBASTIAN', ease: 'none' }, '-=0.1')
+    .to('#descripcion', { duration: 3, text: '// Soluciones rapidas y backend solido para tu aplicacion._', ease: 'none' }, '-=0.3')
+    .from('#botones', { opacity: 0, y: 20, duration: 0.6 }, '-=0.3')
+    .from('#redes', { opacity: 0, y: 20, duration: 0.6 }, '-=0.3')
+    .from('#scroll', { opacity: 0, y: 20, duration: 0.6 }, '-=0.3')
+</script>
