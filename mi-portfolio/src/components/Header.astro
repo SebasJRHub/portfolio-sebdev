@@ -1,7 +1,7 @@
 <header id="header" class="flex justify-between items-center px-10 py-4 fixed top-0 w-full z-50 transition-all duration-300">
-   <a href="/" class="font-bold text-[#7c6fff] text-base tracking-wider no-underline">
-    &lt;seb_dev/&gt;
-  </a>
+    <a href="/" class="font-bold text-[#7c6fff] text-base tracking-wider no-underline">
+      &lt;seb_dev/&gt;
+    </a>
     <nav class="flex gap-8">
     <a href="#inicio" class="font-mono text-xs tracking-widest text-gray-400 hover:text-[#7c6fff] transition-colors group relative py-2" >
         01 inicio
@@ -34,10 +34,12 @@
   const header = document.getElementById('header');
 
   window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      header.classList.add('bg-[#0a0a0f]/80', 'backdrop-blur-md', 'border-b', 'border-[#7c6fff]');
-    } else {
-      header.classList.remove('bg-[#0a0a0f]/80', 'backdrop-blur-md', 'border-b', 'border-[#7c6fff]');
+    if (header) {
+      if (window.scrollY > 50) {
+        header.classList.add('bg-[#0a0a0f]/80', 'backdrop-blur-md', 'border-b', 'border-[#7c6fff]/30');
+      } else {
+        header.classList.remove('bg-[#0a0a0f]/80', 'backdrop-blur-md', 'border-b', 'border-[#7c6fff]/30');
+      }
     }
   });
 </script>

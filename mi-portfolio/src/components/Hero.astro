@@ -2,7 +2,11 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<section id="inicio" class="text-white py-20 px-20 min-h-screen">
+<section id="inicio" class="text-white pb-0 pt-20 px-20 min-h-screen">
+    <span class="absolute top-30 right-0 text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
+        01
+    </span>
+    <div class="absolute h-[500px] w-[1px] bg-gradient-to-b from-transparent via-[#7c6fff]/30 to-transparent right-47"></div>
     <p id="disponible"class="font-mono text-sm tracking-[3px] uppercase text-gray-400 pt-5 pb-8">
         <span class="inline-block w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse shadow-[0_0_6px_2px_rgba(74,222,128,0.7)]"></span>
         Disponible para proyectos
@@ -12,7 +16,7 @@ import { Icon } from 'astro-icon/components';
     </p>
     <h1 id="titulo" class="font-bold uppercase text-9xl select-none pb-13">
     </h1>
-    <p id="descripcion" class="font-mono text-xl text-gray-400 pb-10">
+    <p id="descripcion" class="font-mono text-l text-gray-400 pb-10">
     </p>
     <div id="botones" class="flex items-center">
         <a href="#proyectos" class="group relative overflow-hidden border border-[#7c6fff] px-6 py-3 font-mono text-xs tracking-widest text-white inline-block">
@@ -31,9 +35,10 @@ import { Icon } from 'astro-icon/components';
             <Icon name="simple-icons:linkedin" size={20} />
         </a>
     </div>
-    <p id="scroll" class="text-center  tracking-[3px] text-gray-400 font-mono pt-26 text-xs">
-        scroll
-    </p>
+    <div id="scroll" class="flex items-center gap-4 mt-16 pt-11">
+        <div class="w-12 h-[1px] bg-[#7c6fff]"></div>
+        <span class="font-mono text-xs tracking-widest text-gray-500">scroll</span>
+    </div>
 </section>
 
 <script>
