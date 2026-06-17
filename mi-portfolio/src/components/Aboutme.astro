@@ -1,9 +1,9 @@
-
-<section id="sobre-mi" class="relative text-white pb-0 pt-20 px-20 min-h-screen">
+<section id="sobre-mi" class="relative text-white pb-0 pt-20 px-5 md:px-20 min-h-screen overflow-hidden">
    
-    <span class="absolute top-30 left-0 text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
+    <span class="absolute top-30 left-0 text-[8rem] md:text-[15rem] lg:text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
         02
     </span>
+
     <div class="flex items-center gap-10">
         <p class="font-mono text-sm tracking-widest text-[#7c6fff] whitespace-nowrap uppercase">
             02 / sobre mí
@@ -11,18 +11,10 @@
         <div class="flex-1 h-[1px] bg-gradient-to-r from-[#7c6fff] to-transparent">
         </div>
     </div>
-    <div class="grid grid-cols-2 gap-16 items-center">
-        <div>
-            <p class="uppercase font-display w-[500px] text-7xl pt-15">
-                Codigo limpio, <span class="text-[#7c6fff]">eficiente</span> y robusto.
-            </p>
-            <p class="w-[500px] pt-8 font-mono text-gray-400">
-                Hola, mi nombre es Sebastian Santacruz y soy un desarrollador backend con experiencia en lenguajes como Java, C++, JS, TypeScript Python y estos con sus debidos frameworks.<br><br>
-                Soy estudiante de la Universidad del Valle del programa de Tecnologia en Desarrollo de software. Me caracterizo por mi gran liderazgo, buen trabajo en equipo y comunicacion efectiva ademas de mis habilidades tecnicas.
-            </p>
-        </div>
-        
-        <div class="relative w-[300px] h-[400px] mx-auto mt-15">
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+
+        <div class="order-1 md:order-2 relative w-[250px] sm:w-[300px] h-[330px] sm:h-[400px] mx-auto mt-5 md:mt-15">
             <div class="absolute -top-3 -right-3 w-full h-full border border-[#7c6fff]/40"></div>
             <img src="/foto-sebastian.JPG" alt="Sebastian" class="w-full h-full object-cover hover:grayscale-0 transition-all duration-500" />
             <div class="absolute inset-0 bg-[#7c6fff]/10 hover:bg-transparent transition-all duration-500"></div>
@@ -30,8 +22,20 @@
                 <p class="font-mono text-xs tracking-widest text-[#7c6fff]">SEBASTIAN.jpg</p>
             </div>
         </div>
+
+        <div class="order-2 md:order-1">
+            <p class="uppercase font-display w-full text-4xl sm:text-5xl md:text-7xl pt-8 md:pt-15">
+                Codigo limpio, <span class="text-[#7c6fff]">eficiente</span> y robusto.
+            </p>
+            <p class="w-full pt-6 md:pt-8 font-mono text-gray-400 text-sm md:text-base">
+                Hola, mi nombre es Sebastian Santacruz y soy un desarrollador backend con experiencia en lenguajes como Java, C++, JS, TypeScript Python y estos con sus debidos frameworks.<br><br>
+                Soy estudiante de la Universidad del Valle del programa de Tecnologia en Desarrollo de software. Me caracterizo por mi gran liderazgo, buen trabajo en equipo y comunicacion efectiva ademas de mis habilidades tecnicas.
+            </p>
+        </div>
+
     </div>
-    <div class="bg-[#0E0B18] w-[600px] h-[200px] border-[#7c6fff]/20 border py-3 px-4 mt-8 mb-6">
+
+    <div class="bg-[#0E0B18] w-full max-w-[600px] h-auto border-[#7c6fff]/20 border py-3 px-4 mt-8 mb-6">
         <div class="pb-3">
             <span class="inline-block w-[6px] h-[6px] rounded-full bg-red-400 mr-1 select-none"></span>
             <span class="inline-block w-[6px] h-[6px] rounded-full bg-yellow-400 mr-1 select-none"></span>

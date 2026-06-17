@@ -2,40 +2,47 @@
 import { Icon } from 'astro-icon/components';
 ---
 
-<section id="inicio" class="text-white pb-0 pt-20 px-20 min-h-screen">
-    <span class="absolute top-30 right-0 text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
+<section id="inicio" class="relative text-white pb-0 pt-32 md:pt-20 px-5 md:px-20 min-h-screen overflow-hidden">
+    
+    <span class="absolute top-30 right-0 text-[8rem] md:text-[15rem] lg:text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
         01
     </span>
-    <div class="absolute h-[500px] w-[1px] bg-gradient-to-b from-transparent via-[#7c6fff]/30 to-transparent right-47"></div>
-    <p id="disponible"class="font-mono text-sm tracking-[3px] uppercase text-gray-400 pt-5 pb-8">
+
+    <div class="hidden lg:block absolute h-[500px] w-[1px] bg-gradient-to-b from-transparent via-[#7c6fff]/30 to-transparent right-47"></div>
+
+    <p id="disponible" class="font-mono text-xs md:text-sm tracking-[3px] uppercase text-gray-400 pt-2 md:pt-5 pb-6 md:pb-8 flex items-center">
         <span class="inline-block w-2 h-2 rounded-full bg-green-400 mr-2 animate-pulse shadow-[0_0_6px_2px_rgba(74,222,128,0.7)]"></span>
         Disponible para proyectos
     </p>
-    <p id="rol" class="font-mono text-lg text-[#7c6fff] uppercase tracking-[3px]">
+
+    <p id="rol" class="font-mono text-sm md:text-lg text-[#7c6fff] uppercase tracking-[3px]">
         Desarrollador backend
     </p>
-    <h1 id="titulo" class="font-bold uppercase text-9xl select-none pb-13">
+
+    <h1 id="titulo" class="font-bold uppercase text-5xl sm:text-6xl md:text-8xl lg:text-9xl select-none pb-8 md:pb-13 break-words">
     </h1>
-    <p id="descripcion" class="font-mono text-l text-gray-400 pb-20">
+
+    <p id="descripcion" class="font-mono text-sm md:text-l text-gray-400 pb-20 md:pb-20">
     </p>
-    <div id="botones" class="flex items-center">
+
+    <div id="botones" class="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-0">
         <a href="#proyectos" class="group relative overflow-hidden border border-[#7c6fff] px-6 py-3 font-mono text-xs tracking-widest text-white inline-block">
             <span class="absolute inset-0 w-0 bg-[#7c6fff] transition-all duration-300 group-hover:w-full"></span>
             <span class="relative z-10 group-hover:text-white transition-colors duration-300 font-bold">[VER PROYECTOS →]</span>
         </a>
-        <a href="#contacto" class="pl-3 font-mono text-[#7c6fff]" >[CONTACTAME]</a>
+        <a href="#contacto" class="sm:pl-3 font-mono text-[#7c6fff]">[CONTACTAME]</a>
     </div>
 
     <div id="redes" class="flex gap-4 mt-8">
         <a href="https://github.com/SebasJRHub" target="_blank" class="text-gray-500 hover:text-white transition-colors">
             <Icon name="simple-icons:github" size={20} />
         </a>
-
         <a href="https://www.linkedin.com/in/sebastian-santacruz-8a8a212a9/" target="_blank" class="text-gray-500 hover:text-white transition-colors">
             <Icon name="simple-icons:linkedin" size={20} />
         </a>
     </div>
-    <div id="scroll" class="flex items-center gap-4 mt-6 pt-11">
+
+    <div id="scroll" class="flex items-center gap-4 mt-10 md:mt-6 pt-11 pb-10">
         <div class="w-12 h-[1px] bg-gradient-to-r from-[#7c6fff] to-transparent"></div>
         <span class="font-mono text-xs tracking-widest text-[#7c6fff]">SCROLL</span>
     </div>

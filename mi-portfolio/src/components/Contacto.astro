@@ -1,5 +1,5 @@
-<section id="contacto" class="relative text-white pb-0 pt-20 px-20 min-h-screen">
-    <span class="absolute bottom-30 right-0 text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
+<section id="contacto" class="relative text-white pb-0 pt-20 px-5 md:px-20 min-h-screen overflow-hidden">
+    <span class="absolute bottom-30 right-0 text-[8rem] md:text-[15rem] lg:text-[23rem] font-black text-[#7c6fff]/3 leading-none select-none pointer-events-none scale-x-70">
         06
     </span>
     <div class="flex items-center gap-10 pb-10">
@@ -10,9 +10,9 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-[500px_1fr] gap-16" >
+    <div class="grid grid-cols-1 md:grid-cols-[500px_1fr] gap-10 md:gap-16">
         <div>
-            <h2 class="font-display text-8xl pb-5">
+            <h2 class="font-display text-4xl sm:text-5xl md:text-8xl pb-5">
                 Descubre mas <span class="text-[#7c6fff]">sobre mi</span>
             </h2>
             <p class="font-mono text-gray-400 pb-10">
@@ -82,7 +82,7 @@
             </button>
         </form>
 
-        <div id="toast" class="fixed bottom-8 right-8 z-50 hidden">
+        <div id="toast" class="fixed bottom-5 right-5 left-5 md:left-auto md:right-8 md:bottom-8 z-50 hidden">
   <div class="border border-[#7c6fff] bg-[#0d0d0d] px-6 py-4 font-mono text-sm flex items-center gap-3">
     <span class="text-[#7c6fff]">✓</span>
     <span id="toast-msg">Mensaje enviado correctamente</span>
